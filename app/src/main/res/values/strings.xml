@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Retrolambda</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+</resources>

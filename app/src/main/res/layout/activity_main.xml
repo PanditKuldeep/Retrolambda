@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rrMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_value"
+            android:layout_margin="20dp"
+            android:inputType="number"
+            />
+
+
+        <EditText
+            android:id="@+id/etTwo"
+            android:layout_below="@+id/etOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_value"
+            android:layout_margin="20dp"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_below="@+id/etTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@+id/rrMain"
+        android:weightSum="4"
+        >
+
+
+        <TextView
+            android:id="@+id/txtAddition"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/addition"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtSubtraction"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/subtraction"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@+id/llOne"
+        android:weightSum="4"
+        >
+
+
+        <TextView
+            android:id="@+id/txtMultiplication"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplication"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtDivision"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/division"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
